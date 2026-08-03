@@ -6,19 +6,30 @@
 }
 
 body{
-    background:#f4f6f9;
-    color:#333;
-    line-height:1.6;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1f2937;
 }
 
 /* Header */
 
 header{
-    background:#0d6efd;
-    color:#fff;
-    padding:20px 8%;
-    position:sticky;
-    top:0;
+    background: #1f2937;
+    color: white;
+    padding: 20px 8%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #60a5fa;
+}
 }
 
 nav{
@@ -48,35 +59,38 @@ nav ul li a:hover{
 
 /* Hero */
 
-#home{
-    text-align:center;
-    padding:100px 20px;
-    background:linear-gradient(to right,#0d6efd,#5b9dff);
+.hero{
+    background: linear-gradient(135deg, #111827, #374151);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.4rem;
+    color: #d1d5db;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:16px 38px;
+    background:#ffffff;
+    color:#111827;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
     color:white;
-}
-
-#home h1{
-    font-size:45px;
-    margin-bottom:20px;
-}
-
-#home p{
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-#home button{
-    padding:12px 30px;
-    border:none;
-    border-radius:5px;
-    background:#fff;
-    color:#0d6efd;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-#home button:hover{
-    background:#ffd43b;
 }
 
 /* Sections */
@@ -116,10 +130,15 @@ section h2{
 }
 
 #categories li{
-    background:#0d6efd;
+    background:#374151;
     color:white;
-    padding:10px 20px;
-    border-radius:20px;
+    padding:12px 22px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+#categories li:hover{
+    background:#2563eb;
 }
 
 /* Contact */
@@ -139,25 +158,26 @@ form textarea{
 }
 
 form button{
-    background:#0d6efd;
+    background:#111827;
     color:white;
     border:none;
     padding:12px 20px;
     cursor:pointer;
-    border-radius:5px;
+    border-radius:8px;
+    transition:.3s;
 }
 
 form button:hover{
-    background:#084298;
+    background:#2563eb;
 }
 
 /* Footer */
 
 footer{
-    background:#222;
-    color:white;
+    background:#111827;
+    color:#d1d5db;
     text-align:center;
-    padding:20px;
+    padding:25px;
 }
 
 /* Responsive */
@@ -203,16 +223,16 @@ nav ul li{
 .card button{
     margin-top:15px;
     padding:10px 20px;
-    background:#0d6efd;
+    background:#111827;
     color:white;
     border:none;
-    border-radius:5px;
+    border-radius:8px;
     cursor:pointer;
+    transition:.3s;
 }
 
-
 .card button:hover{
-    background:#084298;
+    background:#2563eb;
 }
 
 
